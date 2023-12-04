@@ -17,7 +17,7 @@
 const mongoose = require('mongoose');
 
 const Schema = new mongoose.Schema({
-    "N_département_BAN(BAN)": Number,
+    "N°_département_(BAN)": Number,
     "Date_réception_DPE": String,
     "Date_établissement_DPE": String,
     "Date_visite_diagnostiqueur": String,

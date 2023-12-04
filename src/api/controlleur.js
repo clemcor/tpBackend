@@ -17,10 +17,10 @@ exports.register = function(req,res){
 
 exports.login =async function(req,res){
     const email = req.body.email;
-    let password = req.body.email;
+    let password = req.body.password;
 
     
-    const user =await service.getUser(email,password);
+    const user =await service.login(email,password);
 
     if(!user){
         res.status(401).send('invalid credentials');
@@ -34,3 +34,24 @@ exports.login =async function(req,res){
     });
 
 }
+
+exports.getAdresse = async function(req,res){
+    const codepostal = req.body.codepostal;
+    const ville = req.body.ville;
+    const Dpe = req.body.Dpe;
+    const Ges = req.body.Ges;
+    const surface_Max = req.body.surface_Max;
+    const surface_Min = req.body.surface_Min;
+    const durface_exacte = req.body.surface_exacte;
+
+    const adresse = await service.getAdresse(codepostal,ville,Dpe,Ges);
+    res.json(adresse);
+}
+//requette
+/*
+{
+    "codepostal": "72300",
+    "Dpe": "A",
+    "Ges": "A"
+}
+*/
