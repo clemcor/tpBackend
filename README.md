@@ -30,12 +30,18 @@ Si vous rencontrez des erreurs de type `Cannot read properties of undefined`, as
 S
 ## Routes
 les routes pour utiliser l'api sont
-   /api/v1/ouquc/login
-   /api/v1/ouquc/register
-   /api/v1/ouquc/adresse
-   /api/v1/ouquc/longlat
-   /api/v1/ouquc/listRecherche
-    /api/v1/ouquc/deleteRecherche
-    /api/v1/ouquc/relancerRecherche
+/api/v1/ouquc/login
+   
+/api/v1/ouquc/register
+   
+/api/v1/ouquc/adresse
+   
+/api/v1/ouquc/longlat
+   
+/api/v1/ouquc/listRecherche
+   
+/api/v1/ouquc/deleteRecherche
+    
+/api/v1/ouquc/relancerRecherche
 
 pour lancer le serveur j'utilise  nodemon run dev
